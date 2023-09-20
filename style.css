@@ -3,14 +3,21 @@
     src: url(./Norse-Bold.otf);
 }
 
+:root{
+    --color: #e6007e;
+    --txt: rgb(185, 185, 185)
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--txt);
 }
 
 body {
-    background-color: #f4f4f4;;
+    background-color: #000000;
 }
 
 ul {
@@ -24,10 +31,10 @@ ul {
 .left-side {
     display: flex;
     flex-direction: column;
-    background-image: url(./bg.jpg);
+    background-image: url(./pexels-miriam-espacio-110854.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 30vw;
+    width: 45vw;
     min-height: 100vh;
 }
 
@@ -38,13 +45,13 @@ ul {
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 150px;
+    height: 200px;
     padding: 30px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .left-side .logo img {
-    max-width: 35%;
+   width: 30%;
 }
 
 .left-side .logo p {
@@ -61,33 +68,29 @@ ul {
 
 .info-section {
     min-height: 30vh;
-    padding-top: 130px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
+    padding: 40px 30px;
 }
 
 .info-section p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    color: #333;
+    line-height: 2rem;
 }
 
 .form-section {
-    background-color: #fff;
+    background-color: rgb(6, 6, 6);
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
     padding: 20px 30px;
     min-height: 35vh;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .form-section h1 {
     margin-bottom: 10px;
-    color: #333;
     font-size: 1.5rem;
 }
 
 .form-container {
-    width: 80%;
+    width: 90%;
     height: 100%;
 }
 
@@ -103,44 +106,54 @@ ul {
 
 label{
     display: block;
-    color: #333;
     margin-top: 15px;
     text-transform: uppercase;
+    font-size: 1rem;
 }
 
 input {
-    padding:5px;
+    padding:2px;
     width: 100%;
     outline: none;
-    border: 1px solid #E5E7EB;
-    border-radius: 5px;
+    background-color: rgb(2, 2, 2);
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+    opacity: 50%;
+    font-size: .9rem;
 }
 
 input:focus {
-    border-color: #3451f5;
+    border-color: var(--color);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .account-section {
     margin-top: 10px;
-    padding: 20px 30px 100px 30px;
+    padding: 20px 30px;
 }
 
 button {
-    padding: 10px 30px;
-    background-color: #596D48;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color);
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid var(--color);
     border-radius: 5px;
-    margin-bottom: 10px;
+    padding: 10px 40px;
+    margin: 40px 0;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--color);
+    color: black;
+    
 }
 
 a{
     text-decoration: none;
-    color: #596D48;
     font-weight: bold;
+    color: var(--color);
 }
 
 /*media queries*/
