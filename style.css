@@ -31,7 +31,7 @@ ul {
 .left-side {
     display: flex;
     flex-direction: column;
-    background-image: url(./pexels-miriam-espacio-110854.jpg);
+    background-image: url(./bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -168,14 +168,11 @@ a{
         flex-direction: column;
     }
     .left-side .logo img {
-        max-width: 96%;
+        max-width: 50%;
     } 
     .left-side .logo p {
         font-size: 3rem;
     }
-}
-
-@media(max-width:550px) {
     .container {
         flex-direction: column;
     }
